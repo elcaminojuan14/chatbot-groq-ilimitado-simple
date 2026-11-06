@@ -17,7 +17,7 @@ Reglas: Si te piden un capítulo completo, dalo completo versículo por versícu
       method: 'POST',
       headers: {'Content-Type':'application/json','Authorization':'Bearer '+apiKey},
       body: JSON.stringify({
-        model: 'llama-3.1-8b-instant',
+        model: 'openai/gpt-oss-20b',
         messages: [{role:'system', content:PROMPT}, ...messages.map((m:any)=>({role:m.role, content:m.content}))],
         temperature: 0.2,
         max_tokens: 4000,
