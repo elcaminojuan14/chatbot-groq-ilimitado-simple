@@ -13,9 +13,9 @@ export async function POST(req: Request) {
         { role: 'system', content: 'Eres un asistente útil, amable y respondes en español. Eres un chatbot para Google Sites ilimitado.' },
         ...messages.map((m: any) => ({ role: m.role, content: m.content })),
       ],
-      model: 'llama3-8b-8192',
-      temperature: 0.7,
-      max_tokens: 800,
+      model: 'openai/gpt-oss-20b',
+      temperature: 0.2,
+      max_tokens: 4000,
     });
     return Response.json({ message: completion.choices[0]?.message?.content || 'Sin respuesta' });
   } catch (e: any) {
