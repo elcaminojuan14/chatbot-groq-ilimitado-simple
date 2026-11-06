@@ -27,7 +27,7 @@ export default function Page(){
   return (
     <div style={{maxWidth:700,margin:'0 auto',padding:20}}>
       <h1 style={{textAlign:'center'}}>Para consultas biblicas</h1>
-      <p style={{textAlign:'center',color:'#666'}}>14,400 chats/día gratis • Para Google Sites</p>
+      <p style={{textAlign:'center',color:'#666'}}>El Camino - Juan 14:6</p>
       <div style={{border:'1px solid #ddd',borderRadius:12,height:500,overflowY:'auto',padding:16,background:'#fafafa'}}>
         {msgs.map((m,i)=>(
           <div key={i} style={{margin:'8px 0',textAlign:m.role==='user'?'right':'left'}}>
