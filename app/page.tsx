@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function Page(){
-  const [msgs,setMsgs]=useState([{role:'assistant',content:'¡Hola! Soy tu chatbot ilimitado con Groq. Pregúntame lo que quieras.'}]);
+  const [msgs,setMsgs]=useState([{role:'assistant',content:'Asistente el Camino.'}]);
   const [input,setInput]=useState('');
   const [loading,setLoading]=useState(false);
 
@@ -26,7 +26,7 @@ export default function Page(){
 
   return (
     <div style={{maxWidth:700,margin:'0 auto',padding:20}}>
-      <h1 style={{textAlign:'center'}}>Chatbot Ilimitado - Vercel + Groq</h1>
+      <h1 style={{textAlign:'center'}}>Para consultas biblicas</h1>
       <p style={{textAlign:'center',color:'#666'}}>14,400 chats/día gratis • Para Google Sites</p>
       <div style={{border:'1px solid #ddd',borderRadius:12,height:500,overflowY:'auto',padding:16,background:'#fafafa'}}>
         {msgs.map((m,i)=>(
